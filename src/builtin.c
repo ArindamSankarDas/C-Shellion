@@ -5,8 +5,8 @@
 
 char *builtin_str[] = {"cd", "exit", "help"};
 int (*builtin_func[])(char **) = {
-    &lsh_exit,
     &lsh_cd,
+    &lsh_exit,
     &lsh_help
 };
 
