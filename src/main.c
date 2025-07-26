@@ -2,7 +2,7 @@
 #include "shell.h"
 
 int main(int argc, char *argv[]){
-	lsh_loop();
+	shell_loop();
 
 	//Perform any shutdown/cleanup.
 

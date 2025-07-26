@@ -1,10 +1,10 @@
 #ifndef SHELL_H
 #define SHELL_H
 
-void lsh_loop(void);
-char *lsh_read_line(void);
-char **lsh_split_line(char *line);
-int lsh_launch(char **args);
-int lsh_execute(char **args);
+void shell_loop(void);
+char *shell_read_line(void);
+char **shell_split_line(char *line);
+int shell_launch(char **args);
+int shell_execute(char **args);
 
 #endif
