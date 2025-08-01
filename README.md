@@ -66,7 +66,11 @@ C-Shellion/
 mkdir -p build && cd build
 
 # Run CMake configuration
-cmake ..
+cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..
+
+or,
+
+cmake .. (if you don't want compile_commands.json for your code editors to navigate the folder structure)
 
 # Build the executable to be run
 cmake --build .
