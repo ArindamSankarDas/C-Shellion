@@ -33,6 +33,10 @@ int shell_execute(char **args){
 		return 1;
 	}
 
+	if (strcmp(args[0], "history") != 0) {
+        shell_history(args);
+    }
+
 	for(int i = 0; i < shell_num_builtins(); i++){
 		if(strcmp(args[0], builtin_str[i]) == 0){
 			return (*builtin_func[i])(args);
